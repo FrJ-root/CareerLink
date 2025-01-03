@@ -1,25 +1,28 @@
+<?php 
+require_once __DIR__."/../../vendor/autoload.php";
+use FrJ\Config\Database;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Career Link">
-    <title>CareerLink-Homepage</title>
+    <title>CareerLink - Homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans bg-gradient-to-br from-purple-600 to-purple-400">
+    
     <nav class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-600">MyNetwork</a>
+            <a href="/CareerLink/src/Views/index.php" class="text-2xl font-bold text-blue-600">CareerLink</a>
             <ul class="flex space-x-6">
-                <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-blue-600">Jobs</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-blue-600">Messages</a></li>
-                <li><a href="#" class="text-gray-700 hover:text-blue-600">Notifications</a></li>
+                <li><a href="/CareerLink/src/Views/index.php" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                <li><a href="/CareerLink/src/Classes/JobOffer.php" class="text-gray-700 hover:text-blue-600">Jobs</a></li>
             </ul>
             <div>
-                <a href="#" class="text-gray-700 hover:text-blue-600 px-4 py-2">Login</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Sign Up</a>
+                <a href="/CareerLink/src/Views/auth/Login.php" class="text-gray-700 hover:text-blue-600 px-4 py-2">Login</a>
+                <a href="/CareerLink/src/Views/auth/registre.php" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Sign Up</a>
             </div>
         </div>
     </nav>
@@ -74,8 +77,9 @@
 
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 MyNetwork. All rights reserved.</p>
+            <p>&copy; 2024 <b class="text-xl">CareerLink</b>. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
